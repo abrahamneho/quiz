@@ -961,61 +961,129 @@ footer{
 
 <script>
 
-var SCRIPT_URL = "";
+var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyURmYGI8x92qSRQB68PEtda48QJvsdzGZRAPwbirgiaglTSy9IzY9HSn9iaeWn-ou7ww/exec";
 
 var ALL_QUESTIONS = [
-  {id:"q01",  q:"1",  opts:["","","",""]},
-  {id:"q02",  q:"2",  opts:["","","",""]},
-  {id:"q03",  q:"3",  opts:["","","",""]},
-  {id:"q04",  q:"4",  opts:["","","",""]},
-  {id:"q05",  q:"5",  opts:["","","",""]},
-  {id:"q06",  q:"6",  opts:["","","",""]},
-  {id:"q07",  q:"7",  opts:["","","",""]},
-  {id:"q08",  q:"8",  opts:["","","",""]},
-  {id:"q09",  q:"9",  opts:["","","",""]},
-  {id:"q10",  q:"10", opts:["","","",""]},
-  {id:"q11",  q:"11", opts:["","","",""]},
-  {id:"q12",  q:"12", opts:["","","",""]},
-  {id:"q13",  q:"13", opts:["","","",""]},
-  {id:"q14",  q:"14", opts:["","","",""]},
-  {id:"q15",  q:"15", opts:["","","",""]},
-  {id:"q16",  q:"16", opts:["","","",""]},
-  {id:"q17",  q:"17", opts:["","","",""]},
-  {id:"q18",  q:"18", opts:["","","",""]},
-  {id:"q19",  q:"19", opts:["","","",""]},
-  {id:"q20",  q:"20", opts:["","","",""]},
-  {id:"q21",  q:"21", opts:["","","",""]},
-  {id:"q22",  q:"22", opts:["","","",""]},
-  {id:"q23",  q:"23", opts:["","","",""]},
-  {id:"q24",  q:"24", opts:["","","",""]},
-  {id:"q25",  q:"25", opts:["","","",""]},
-  {id:"q26",  q:"26", opts:["","","",""]},
-  {id:"q27",  q:"27", opts:["","","",""]},
-  {id:"q28",  q:"28", opts:["","","",""]},
-  {id:"q29",  q:"29", opts:["","","",""]},
-  {id:"q30",  q:"30", opts:["","","",""]},
-  {id:"q31",  q:"31", opts:["","","",""]},
-  {id:"q32",  q:"32", opts:["","","",""]},
-  {id:"q33",  q:"33", opts:["","","",""]},
-  {id:"q34",  q:"34", opts:["","","",""]},
-  {id:"q35",  q:"35", opts:["","","",""]},
-  {id:"q36",  q:"36", opts:["","","",""]},
-  {id:"q37",  q:"37", opts:["","","",""]},
-  {id:"q38",  q:"38", opts:["","","",""]},
-  {id:"q39",  q:"39", opts:["","","",""]},
-  {id:"q40",  q:"40", opts:["","","",""]},
-  {id:"q41",  q:"41", opts:["","","",""]},
-  {id:"q42",  q:"42", opts:["","","",""]},
-  {id:"q43",  q:"43", opts:["","","",""]},
-  {id:"q44",  q:"44", opts:["","","",""]},
-  {id:"q45",  q:"45", opts:["","","",""]},
-  {id:"q46",  q:"46", opts:["","","",""]},
-  {id:"q47",  q:"47", opts:["","","",""]},
-  {id:"q48",  q:"48", opts:["","","",""]},
-  {id:"q49",  q:"49", opts:["","","",""]},
-  {id:"q50",  q:"50", opts:["","","",""]}
-];
+  
+// DATA ANALYTICS
+  
+  {id:"q01", q:"Which Python library is primarily used for data manipulation and analysis?", opts:["NumPy","Pandas","Matplotlib","Scikit-learn"]},
+    
+  {id:"q02", q:"Which of these is NOT a data visualization tool?", opts:["Tableau","Power BI","Apache Kafka","Looker"]},
+  
+  {id:"q03", q:"What is a 'data lake' in modern analytics architecture?", opts:["A centralized repo for raw unstructured data","A cloud backup system","A relational database","A BI dashboard tool"]},
+  
+  {id:"q04", q:"India's National Data Governance Framework (NDGF) was drafted by which ministry?", opts:["Ministry of Finance","Ministry of Commerce","NITI Aayog","MeitY"]},
+  
+  {id:"q05", q:"'Data mesh' treats data as:", opts:["A centralized warehouse","A product owned by domain teams","A cloud-only resource","A NoSQL database"]},
+  
+  {id:"q06", q:"Which Indian govt initiative builds a unified health data ecosystem?", opts:["DigiLocker","PM-KISAN","Ayushman Bharat Digital Mission","e-NAM"]},
 
+  // DIGITAL MARKETING
+    
+  {id:"q07", q:"What is the full form of ROAS?", opts:["Return on Ad Spend","Rate of Ad Sales","Revenue on Audience Scale","Return on Average Sales"]},
+  
+  {id:"q08", q:"Google's 'Helpful Content Update' primarily targeted:", opts:["Backlink manipulation","Image SEO","Local business listings","AI-generated thin content"]},
+  
+  {id:"q09", q:"India's DPDPA 2023 most directly impacts which marketing practice?", opts:["Content marketing","Cookie-based tracking and consent","Influencer marketing","OOH advertising"]},
+
+  {id:"q10", q:"What is 'dark social' in digital marketing?", opts:["Paid dark web advertising","Black-hat SEO tactics","Private channel sharing not tracked by analytics","Anonymous social accounts"]},
+  
+  {id:"q11", q:"Which Adobe AI tool is used for generative image creation in marketing?", opts:["Adobe Firefly","Adobe Sensei","Adobe XD","Adobe Premiere"]},
+  
+  // AI & ML
+  
+  {id:"q12", q:"GPT-4o released by OpenAI in 2024 is notable for being:", opts:["A text-only model","An open-source model","A coding-only assistant","A multimodal model (text, audio, image)"]},
+  
+  {id:"q13", q:"India's National AI Strategy '#AIForAll' is led by:", opts:["ISRO","NITI Aayog","RBI","CCI"]},
+    
+  {id:"q14", q:"RAG (Retrieval-Augmented Generation) is used to:", opts:["Ground LLM responses in external knowledge","Train models faster","Compress model size","Generate synthetic data"]},
+    
+  {id:"q15", q:"AI 'agents' refer to systems that:", opts:["Humans who train AI","Autonomously plan and execute multi-step tasks","AI customer support bots only","LLM fine-tuning processes"]},
+
+  // CYBERSECURITY
+  
+  {id:"q16", q:"What is a 'zero-day vulnerability'?", opts:["Discovered on first deployment day","An old unpatched bug","A ransomware variant","A vulnerability with no patch available"]},
+    
+  {id:"q17", q:"Which attack floods a server to make it unavailable?", opts:["Phishing","SQL Injection","DDoS","Man-in-the-Middle"]},
+  
+  {id:"q18", q:"'Pegasus' spyware by NSO Group primarily targets:", opts:["Industrial control systems","Financial databases","Cloud servers","Mobile phones via zero-click exploits"]},
+  
+  {id:"q19", q:"The 'CIA Triad' in cybersecurity stands for:", opts:["Central Intelligence Agency guidelines","Cyber Incident Analysis","Confidentiality, Integrity, Availability","Code, Identify, Authenticate"]},
+  
+  {id:"q20", q:"What is a 'supply chain attack' in cybersecurity?", opts:["Attacking physical supply trucks","Disrupting e-commerce logistics","Hacking procurement databases","Compromising software via a trusted third-party vendor"]},
+  
+  // CLOUD COMPUTING
+  
+  {id:"q21", q:"What is the key difference between IaaS and PaaS?", opts:["IaaS provides apps; PaaS provides hardware","IaaS = infrastructure; PaaS = development platform","Both are identical services","PaaS is only for mobile apps"]},
+  
+  {id:"q22", q:"India's government cloud initiative is called:", opts:["MeghRaj","IndiaCloud","BharatCloud","SarkariCloud"]},
+  
+  {id:"q23", q:"What is 'serverless computing'?", opts:["Deploy code without managing server infra","Computing without any servers","An offline-only model","A quantum computing variant"]},
+  
+  {id:"q24", q:"Which deployment model combines public and private clouds?", opts:["Community cloud","Multi-cloud","Hybrid cloud","Edge cloud"]},
+  
+  {id:"q25", q:"'FinOps' in cloud refers to:", opts:["Financial ops of cloud providers","Cloud cost optimisation and financial accountability","A cloud-native payments API","DevOps for finance firms"]},
+  
+  {id:"q26", q:"Which US cloud act allows US law enforcement to access data stored abroad?", opts:["GDPR","CHIPS Act","USA PATRIOT Act","CLOUD Act 2018"]},
+  
+  // QUANTUM TECH
+  
+  {id:"q27", q:"What is 'quantum supremacy'?", opts:["A quantum computer outperforms any classical computer on a task","Quantum replacing all classical computers","A military quantum weapon","Quantum internet going live"]},
+  
+  {id:"q28", q:"India's National Quantum Mission (NQM) budget is approximately:", opts:["Rs 1,000 crore","Rs 2,500 crore","Rs 6,003 crore","Rs 10,000 crore"]},
+  
+  {id:"q29", q:"Google's 2024 Willow chip breakthrough was about:", opts:["Fastest classical processing","Below-threshold quantum error correction","First quantum internet node","Quantum AI training"]},
+  
+  {id:"q30", q:"QKD (Quantum Key Distribution) makes eavesdropping detectable because:", opts:["It uses RSA encryption","It uses blockchain verification","Keys are physically delivered","Any interception disturbs the quantum state"]},
+  
+  {id:"q31", q:"Which country launched the world's first quantum communication satellite?", opts:["USA","India","China","Germany"]},
+  
+  {id:"q32", q:"A qubit differs from a classical bit because it can:", opts:["Exist in superposition (0 and 1 simultaneously)","Store more bytes","Process faster clock speeds","Work without electricity"]},
+  
+  // GOVERNANCE & GEOPOLITICS
+  
+  {id:"q33", q:"The US CHIPS and Science Act (2022) primarily aims to:", opts:["Ban Chinese tech companies","Subsidise domestic US semiconductor manufacturing","Create a global AI standard","Regulate social media"]},
+  
+  {id:"q34", q:"India's PLI scheme for semiconductors is valued at:", opts:["Rs 10,000 crore","Rs 40,000 crore","Rs 76,000 crore","Rs 1,00,000 crore"]},
+
+  {id:"q35", q:"The 'China+1' global supply chain strategy means:", opts:["Diversifying manufacturing beyond China to reduce geopolitical risk","China investing in one more country","A joint venture with one Chinese firm","Adding one Chinese product to supply chains"]},
+
+  {id:"q36", q:"TSMC — which makes ~90% of advanced chips — is based in:", opts:["South Korea","Japan","USA","Taiwan"]},
+  
+  {id:"q37", q:"The Bletchley Declaration (2023) was an international agreement on:", opts:["Climate tech","Frontier AI safety","Quantum weapons","Cybersecurity norms"]},
+  
+  {id:"q38", q:"India's IT Act 2000 is being replaced by:", opts:["Digital India Act","DPDP Act","Data Sovereignty Bill","Cyber Crime Act 2024"]},
+  
+  // AI IN INDUSTRY
+  
+  {id:"q39", q:"In HR, AI tools like HireVue primarily help with:", opts:["Payroll processing","Leave management","Office space planning","Automated video interview screening"]},
+  
+  {id:"q40", q:"'Predictive attrition' in HR analytics means:", opts:["Predicting salary hikes","Predicting which employees are likely to leave","Measuring productivity loss","Forecasting recruitment cycles"]},
+  
+  {id:"q41", q:"In finance, 'robo-advisors' primarily do:", opts:["Replace human CFOs","Detect fraud in real time","Automate investment portfolio management","Process insurance claims"]},
+  
+  {id:"q42", q:"Which Hollywood event in 2023 was partly triggered by AI fears in the film industry?", opts:["Oscar controversy","WGA and SAG-AFTRA strikes","Netflix content removal","Disney acquisition of a studio"]},
+    
+  {id:"q43", q:"Flipkart and Amazon India use AI in logistics primarily for:", opts:["Social media marketing","Customer service only","Warehouse construction planning","Demand forecasting and last-mile delivery optimisation"]},
+  
+  {id:"q44", q:"Generative AI in cinema is MOST controversially used for:", opts:["Writing opening credits","Designing movie posters","Deepfakes and de-ageing/resurrection of actors","Scheduling shoots"]},
+  
+  {id:"q45", q:"'Agentic AI' in finance refers to systems that can:", opts:["Autonomously execute trades and financial workflows","Only answer FAQ queries","Create financial reports manually","Only detect fraud"]},
+
+  // TOOLS & PLATFORMS
+
+  {id:"q46", q:"Which platform is widely used for MLOps — managing ML models in production?", opts:["GitHub","MLflow / Weights & Biases","Figma","Notion"]},
+
+  {id:"q47", q:"Salesforce Einstein is an example of:", opts:["A CRM with embedded AI/ML capabilities","A standalone AI research tool","A social media analytics tool","An ERP system"]},
+    
+  {id:"q48", q:"Apache Spark is primarily used for:", opts:["Frontend web development","Container orchestration","Large-scale distributed data processing","Network security monitoring"]},
+  
+  {id:"q49", q:"Which tool is used for container orchestration at scale?", opts:["Docker","Jenkins","Terraform","Kubernetes"]},
+  
+  {id:"q50", q:"Snowflake is known as a:", opts:["Cloud data warehousing platform","Data visualisation tool","CRM software","IoT platform"]},
+];
+  
 // ── LOGO ─────────────────────────────────────────────────────────
 (function(){
   var img = document.getElementById("logo-img");
